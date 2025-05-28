@@ -35,18 +35,18 @@ public class Teacher : IObserver
 
 public class  School : ISubject
 {
-    private List<IObserver> observers = new List<IObserver>();
+    private List<IObserver> _observers = new List<IObserver>();
     public void RegisterObserver(IObserver observer)
     {
-        observers.Add(observer);
+        _observers.Add(observer);
     }
     public void UnregisterObserver(IObserver observer)
     {
-        observers.Remove(observer);
+        _observers.Remove(observer);
     }
     public void NotifyObservers(string message)
     {
-        foreach (var observer in observers)
+        foreach (var observer in _observers)
         {
             observer.Update(message);
         }
