@@ -6,12 +6,12 @@
 
 public interface ICollege
 {
-    void GetName();
+    void PrintName();
 }
 
 public class Student : ICollege
 {
-    public void GetName()
+    public void PrintName()
     {
          Console.WriteLine("student name");
     }
@@ -19,7 +19,7 @@ public class Student : ICollege
 
 public class Teacher : ICollege
 {
-    public void GetName()
+    public void PrintName()
     {
         Console.WriteLine("teacher name");
     }
@@ -48,8 +48,8 @@ public class Program
         CollegeFactory factory = new CollegeFactory();
 
         ICollege student = factory.GetDetail("student");
-        student.GetName();
+        student.PrintName();
         ICollege teacher = factory.GetDetail("teacher");
-        teacher.GetName();
+        teacher.PrintName();
     }
 }
