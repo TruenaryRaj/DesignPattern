@@ -1,4 +1,7 @@
 ﻿/*Factory Pattern:
+ * This program demonstrate the example of factory design pattern. This pattern defines an public interface for creating an object
+ * but lets subclasses alter the type of objects that will be created. We define a factory method that returns an instance of a class,
+ * from that instance we override the method to return the name of the class. 
  */
 
 public interface ICollege
