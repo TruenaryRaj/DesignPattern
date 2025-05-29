@@ -18,14 +18,14 @@ public class Student
 
 public class  StudentCollection : IEnumerable
 {
-    private List<Student> students = new List<Student>();
-    public void Add(Student student)
+    private List<Student> _students = new List<Student>();
+    public void AddStudent(Student student)
     {
-        students.Add(student);
+        _students.Add(student);
     }
     public IEnumerator GetEnumerator()
     {
-        return new StudentIterator(students.ToArray());
+        return new StudentIterator(_students.ToArray());
     }
 }
 
@@ -59,9 +59,9 @@ public class Program
     static void Main()
     {
         StudentCollection Collection = new StudentCollection();
-        Collection.Add(new Student("Ram"));
-        Collection.Add(new Student("Hari"));
-        Collection.Add(new Student("Sita"));
+        Collection.AddStudent(new Student("Ram"));
+        Collection.AddStudent(new Student("Hari"));
+        Collection.AddStudent(new Student("Sita"));
 
         foreach (Student student in Collection)
         {
