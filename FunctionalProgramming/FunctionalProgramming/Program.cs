@@ -1,36 +1,28 @@
 ﻿/* Functional Programming:
- * This program is an simple demonstration of functional programming which means each method handles only one task
- * and all the output should be only dependend on the input parameters. So, each method in this program like CalculateEven,
- * DoubleNumbers, and SumNumbers is designed to perform a specific operation on a list of integers and only acts for a single task.
+ * So basically functional programming can be easily describe as the programming set of rules that helps programmer to write the code 
+ * in more clean and readable way. It is a programming paradigm that treats computation as the evaluation of mathematical functions 
+ * and avoids changing state and mutable data. For example, in this program all the functions are pure functions, meaning they
+ * do not have side effects and always produce the same output for the same input. It does not changes the global state or mutable data.
+ * similarly it does not use any loops or mutable data structures, instead it uses LINQ to filter and transform the data. It also doesnot 
+ * modifies/mutates the input data, rather it creates new data structures with the desired output.
  */
 using System;
 using System.Net;
-
-public class Calculation
-{
-    public List<int> GetEven(List<int> numbers)
-    {
-        return numbers.Where(n => n % 2 == 0).ToList();
-    }
-
-    public List<int> GetDouble(List<int> numbers)
-    {
-        return numbers.Select(n => n * 2).ToList();
-    }
-
-    public int GetSum(List<int> numbers)
-    {
-        return numbers.Sum();
-    }
-
-}
 
 public class Program
 {
     static void Main()
     {
-        Calculation calculation = new Calculation();
-        int result = calculation.GetSum(calculation.GetDouble(calculation.GetEven([1,2,3,4,5])));
-        Console.WriteLine($"The sum of doubled even numbers is: {result}");
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+        Func<int, bool> isEven = n => n % 2 == 0;
+        Func<int, int> doubleIt = n => n * 2;
+
+        var result = numbers.Where(isEven)
+                            .Select(doubleIt)
+                            .Sum();
+
+        Console.WriteLine($"The sum of double of even numbers is: {result}");
+
     }
 }
