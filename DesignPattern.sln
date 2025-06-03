@@ -35,6 +35,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunctionalProgramming", "Fu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalProgramming", "FunctionalProgramming\FunctionalProgramming\FunctionalProgramming.csproj", "{43553206-D94C-4DA1-A7BA-22B3A1DB9592}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Seperation", "Seperation", "{BE74EF44-53D0-454D-A508-85F85AD5DB14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeperationDemo", "Seperation\SeperationDemo\SeperationDemo.csproj", "{F804FD48-65D6-4808-913E-A4B23D08656C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +77,10 @@ Global
 		{43553206-D94C-4DA1-A7BA-22B3A1DB9592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43553206-D94C-4DA1-A7BA-22B3A1DB9592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43553206-D94C-4DA1-A7BA-22B3A1DB9592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F804FD48-65D6-4808-913E-A4B23D08656C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F804FD48-65D6-4808-913E-A4B23D08656C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F804FD48-65D6-4808-913E-A4B23D08656C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F804FD48-65D6-4808-913E-A4B23D08656C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,7 @@ Global
 		{F066662A-F903-76FE-A5DE-A00134493376} = {BD17E7F2-BA35-4CC7-B138-773127B08317}
 		{A0679474-7AD0-4F78-B10B-27E5FA609A60} = {E6B961D9-823A-41A1-9372-E10D491589BA}
 		{43553206-D94C-4DA1-A7BA-22B3A1DB9592} = {925C48A8-DC49-48FF-BD50-BA99629CC6CB}
+		{F804FD48-65D6-4808-913E-A4B23D08656C} = {BE74EF44-53D0-454D-A508-85F85AD5DB14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {77FFCABE-B9DD-4D5E-B77B-1AF5981AD3BC}
